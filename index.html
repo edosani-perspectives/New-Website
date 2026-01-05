@@ -49,9 +49,9 @@
             </div>
 
             <!-- Visual placeholder -->
-            <div class="hero-visual">
-                <video controls muted loop playsinline preload="metadata" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
-                    <source src="https://perspectives-object-store-premium.nyc3.digitaloceanspaces.com/public/bestnotes-perspectives-demo.mp4#t=0.01" type="video/mp4">
+            <div class="hero-visual" style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #f0f0f0; border-radius: 12px; overflow: hidden;">
+                <video id="hero-video" controls muted loop playsinline preload="auto" poster="/thumbnail.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+                    <source src="https://perspectives-object-store-premium.nyc3.digitaloceanspaces.com/public/bestnotes-perspectives-demo-light.mp4#t=1" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -87,7 +87,10 @@
                 </div>
                 <!-- Duplicate for seamless loop -->
                 <div class="logo-card">
-                    <img src="/Clinic logos/Sana Lake.png" alt="Sana Lake">
+                    <img src="/Clinic logos/Sana Lake.png" alt="Sana Lake" class="logo-large">
+                </div>
+                <div class="logo-card">
+                    <img src="/Clinic logos/summit estate.jpeg" alt="Summit Estate" class="logo-large">
                 </div>
                 <div class="logo-card">
                     <img src="/Clinic logos/fortitude.png" alt="Fortitude">
@@ -223,5 +226,21 @@
     </section>
 
     <script src="/script.js"></script>
+    <script>
+        // Handle video when navigating back to page
+        const heroVideo = document.getElementById('hero-video');
+        if (heroVideo) {
+            heroVideo.addEventListener('loadedmetadata', function() {
+                if (this.currentTime === 0) {
+                    this.currentTime = 1;
+                }
+            });
+
+            // Reload video if it's in an error state
+            heroVideo.addEventListener('error', function() {
+                this.load();
+            });
+        }
+    </script>
 </body>
 </html>
