@@ -50,8 +50,9 @@
         @media (max-width: 768px) {
             .blog-container {
                 grid-template-columns: 1fr;
-                padding: 80px 24px;
-                gap: 40px;
+                padding: 80px 20px 60px;
+                gap: 32px;
+                margin: 0 auto;
             }
             .blog-title {
                 position: relative;
@@ -59,6 +60,29 @@
             }
             .blog-title h1 {
                 font-size: 48px;
+            }
+            .blog-feed {
+                max-width: 100%;
+            }
+            .post-card {
+                padding: 24px !important;
+            }
+            .post-card h3 {
+                font-size: 20px !important;
+            }
+            .post-card p {
+                font-size: 15px !important;
+            }
+        }
+        @media (max-width: 480px) {
+            .blog-title h1 {
+                font-size: 36px;
+            }
+            .blog-container {
+                padding: 60px 16px 40px;
+            }
+            .post-card {
+                padding: 20px !important;
             }
         }
     </style>
