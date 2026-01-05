@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Perspectives Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Logo/Icon_.png">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .blog-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            max-width: 1400px;
+            margin: 0 auto 0 200px;
+            padding: 120px 40px 80px 40px;
+            gap: 60px;
+        }
+        .blog-title {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+        .blog-title h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+        .blog-feed {
+            max-width: 800px;
+        }
+        .post-embed {
+            margin-bottom: 40px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+        }
+        .post-embed iframe {
+            width: 100%;
+            border: none;
+            background: #FFFFFF;
+        }
+        @media (max-width: 768px) {
+            .blog-container {
+                grid-template-columns: 1fr;
+                padding: 80px 24px;
+                gap: 40px;
+            }
+            .blog-title {
+                position: relative;
+                top: 0;
+            }
+            .blog-title h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-grid">
+            <!-- Logo -->
+            <a href="index.html" class="logo-link">
+                <img src="Logo-5-100-removebg-preview.png" alt="Perspectives" class="logo-img">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="security.html" class="nav-link">Security</a>
+                <a href="bestnotes.html" class="nav-link">BestNotes</a>
+                <a href="blogs.html" class="nav-link">Blog</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="header-actions">
+                <a href="https://calendly.com/eshan-perspectiveshealth/perspectives-health" class="btn btn-primary btn-sm">Book a Demo</a>
+                <a href="https://app.perspectiveshealth.ai/login" class="btn btn-sm" style="background-color: #1a1a1a; color: #FFFFFF;">Sign in</a>
+                <a href="https://chromewebstore.google.com/detail/perspectives-health/cjoemdblckbmknbekglodicladhdlapp?authuser=1&hl=en" class="btn btn-primary btn-sm">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Container -->
+    <div class="blog-container">
+        <!-- Blog Title (Left) -->
+        <div class="blog-title">
+            <h1>Blog</h1>
+        </div>
+
+        <!-- Blog Feed (Right) -->
+        <div class="blog-feed">
+            <!-- Post 1 - Eshan's YC Announcement -->
+            <a href="https://www.linkedin.com/posts/eshan-dosani_im-happy-to-share-that-we-just-joined-the-activity-7351686288544092160-VZcU" target="_blank" class="post-card" style="display: block; background: #1a1a1a; border-radius: 12px; padding: 32px; margin-bottom: 32px; text-decoration: none; border: 1px solid #2a2a2a; transition: all 0.2s ease;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #7C3AED 0%, #A855F7 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; font-size: 20px;">E</div>
+                    <div>
+                        <div style="color: #FFFFFF; font-weight: 600; font-size: 16px;">Eshan Dosani</div>
+                        <div style="color: #888888; font-size: 14px;">July 17, 2025</div>
+                    </div>
+                </div>
+                <h3 style="color: #FFFFFF; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">Joining Y Combinator S25</h3>
+                <p style="color: #CCCCCC; font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
+                    I'm happy to share that we just joined the Y Combinator Summer 2025 batch with Perspectives Health. After six months of building, we're tackling the administrative burden that's crushing behavioral health clinics.
+                </p>
+                <p style="color: #CCCCCC; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                    Counselors spend as much time on documentation and proving care to payors as they do actually helping patients. We've built a tool that listens to sessions and completes documentation directly into clinicians' EMRs.
+                </p>
+                <div style="display: inline-flex; align-items: center; gap: 8px; color: #7C3AED; font-weight: 600; font-size: 14px;">
+                    Read on LinkedIn →
+                </div>
+            </a>
+
+            <!-- Post 2 - Y Combinator Feature -->
+            <a href="https://www.linkedin.com/posts/y-combinator_perspectives-health-yc-s25-is-building-ugcPost-7361875819159326720-daJQ" target="_blank" class="post-card" style="display: block; background: #1a1a1a; border-radius: 12px; padding: 32px; margin-bottom: 32px; text-decoration: none; border: 1px solid #2a2a2a; transition: all 0.2s ease;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                    <div style="width: 48px; height: 48px; background: #FF6B00; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; font-size: 20px;">Y</div>
+                    <div>
+                        <div style="color: #FFFFFF; font-weight: 600; font-size: 16px;">Y Combinator</div>
+                        <div style="color: #888888; font-size: 14px;">August 14, 2025</div>
+                    </div>
+                </div>
+                <h3 style="color: #FFFFFF; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">Perspectives Health: AI for Behavioral Health Admin</h3>
+                <p style="color: #CCCCCC; font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
+                    Perspectives Health developed AI agents that automate administrative tasks in behavioral health settings. The system works directly within existing EMRs without requiring system switches or API integrations.
+                </p>
+                <p style="color: #CCCCCC; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                    Administrative work consumes up to 40% of clinicians' days. Perspectives operates seamlessly inside any EMR platform, listens to clinical sessions in real time, and automatically completes complex forms—saving clinicians 2-3 hours daily.
+                </p>
+                <div style="display: inline-flex; align-items: center; gap: 8px; color: #7C3AED; font-weight: 600; font-size: 14px;">
+                    Read on LinkedIn →
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
