@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Perspectives Health</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css?v=3">
     <link rel="icon" type="image/png" href="/Logo/Icon_.png">
     <style>
         body {
@@ -105,29 +105,27 @@
                 <a href="/blogs.html" class="nav-link">Blog</a>
             </nav>
 
-            <!-- Mobile menu toggle -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" style="display: none;">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
             <!-- Actions -->
             <div class="header-actions">
                 <a href="https://calendly.com/eshan-perspectiveshealth/perspectives-health" class="btn btn-primary btn-sm">Book a Demo</a>
-                <a href="https://app.perspectiveshealth.ai/login" class="btn btn-sm" style="background-color: #1a1a1a; color: #FFFFFF;">Sign in</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 5h14M3 10h14M3 15h14" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <a href="https://app.perspectiveshealth.ai/login" class="btn btn-sm btn-secondary">Sign in</a>
                 <a href="https://chromewebstore.google.com/detail/perspectives-health/cjoemdblckbmknbekglodicladhdlapp?authuser=1&hl=en" class="btn btn-primary btn-sm">Download</a>
             </div>
         </div>
-
-        <!-- Mobile nav menu -->
-        <nav class="mobile-nav" id="mobile-nav">
-            <a href="/features.html">Features</a>
-            <a href="/security.html">Security</a>
-            <a href="/bestnotes.html">BestNotes</a>
-            <a href="/blogs.html">Blog</a>
-        </nav>
     </header>
+
+    <!-- Mobile nav menu -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="/features.html">Features</a>
+        <a href="/security.html">Security</a>
+        <a href="/bestnotes.html">BestNotes</a>
+        <a href="/blogs.html">Blog</a>
+    </nav>
 
     <!-- Blog Container -->
     <div class="blog-container">
