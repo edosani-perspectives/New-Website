@@ -199,6 +199,46 @@ body {
     }
 }
 
+.btn-secondary {
+    color: #FFFFFF;
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+}
+
+.btn-secondary:hover {
+    background-color: #404040;
+    border-color: #404040;
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+    background-color: #404040;
+    border-color: #404040;
+    outline: none;
+}
+
+.btn-feature {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-feature:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.btn-feature:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
 /* Hero Section */
 .hero {
     margin-top: var(--header-height);
@@ -761,7 +801,7 @@ body {
 
     /* Hero */
     .hero {
-        padding: 40px var(--container-padding);
+        padding: 24px var(--container-padding);
     }
 
     .hero-container {
@@ -820,7 +860,7 @@ body {
 
     /* Features */
     .feature {
-        padding: 32px 16px;
+        padding: 16px 16px;
     }
 
     .feature-container {
@@ -862,6 +902,7 @@ body {
     .feature-title {
         font-size: 24px !important;
         margin-bottom: 88px !important;
+        padding-bottom: 16px !important;
         line-height: 1.15 !important;
     }
 
@@ -967,7 +1008,7 @@ body {
     }
 
     .feature {
-        padding: 32px 8px;
+        padding: 16px 8px;
     }
 
     .feature-container {
