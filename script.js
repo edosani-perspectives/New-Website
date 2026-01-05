@@ -27,3 +27,27 @@ window.addEventListener('scroll', () => {
 
     lastScroll = currentScroll;
 });
+
+// Mobile menu toggle
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+
+if (mobileMenuToggle && mobileNav) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!mobileMenuToggle.contains(e.target) && !mobileNav.contains(e.target)) {
+            mobileNav.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking a link
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+        });
+    });
+}
