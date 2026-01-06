@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BestNotes Guide - Perspectives Health</title>
-    <link rel="stylesheet" href="/styles.css?v=19">
+    <link rel="stylesheet" href="/styles.css?v=22">
     <link rel="icon" type="image/png" href="/Logo/Icon_.png">
 
     <style>
@@ -12,6 +12,9 @@
        CSS VARIABLES - Brand Colors & Design System
        ============================================ */
     :root {
+      /* Header sizing */
+      --header-height: 64px;
+
       /* Brand Colors - Purple Palette */
       --color-perspectives-black: #000000;
       --color-bestnotes-blue: #7C3AED;
@@ -78,6 +81,34 @@
     }
 
     /* ============================================
+       HEADER OVERRIDE - Match Main Site
+       ============================================ */
+    .header {
+      height: 64px !important;
+      min-height: 64px !important;
+    }
+
+    .header-grid {
+      height: 100% !important;
+      font-size: 16px !important;
+    }
+
+    .logo-img {
+      height: 64px !important;
+      width: auto !important;
+    }
+
+    .nav-link {
+      font-size: 15px !important;
+      font-weight: 500 !important;
+    }
+
+    .btn-sm {
+      font-size: 13px !important;
+      padding: 7px 14px !important;
+    }
+
+    /* ============================================
        BASE STYLES
        ============================================ */
     * {
@@ -98,7 +129,6 @@
       color: var(--color-text-primary);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      zoom: 0.8;
       padding-top: 64px;
     }
 
